@@ -26,7 +26,29 @@ composer install
 npm install
 ```
 
-Run Laravel's Local Development Server:
+1) Copy or rename .env.example into .env.
+
+2) Create an empty database and type it's credentials into your .env file.
+
+3)Generate an APP_KEY:
+```bash
+php artisan key:generate
+```
+
+4)Migrate and seed the database:
+```bash
+php artisan migrate --seed
+```
+
+5)Run Laravel's Local Development Server:
 ```bash
 php artisan serve
 ```
+
+6) To login as admin and moderate:
+email: admin@email.com
+password: admin123**
+
+- To login as a normal user, register or connect with:
+email: johndoe@email.com
+password: johndoe

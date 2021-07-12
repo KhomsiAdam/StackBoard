@@ -17,7 +17,7 @@ Authentication is handled with JetStream. Using Blade and it's UI kit, icons and
 
 
 # Setup
-Install dependencies and packages
+1) Install dependencies and packages
 ```bash
 composer install
 ```
@@ -26,26 +26,26 @@ composer install
 npm install
 ```
 
-1) Copy or rename .env.example into .env.
+2) Copy or rename .env.example into .env.
 
-2) Create an empty database and type it's credentials into your .env file.
+3) Create an empty database and type it's credentials into your .env file.
 
-3)Generate an APP_KEY:
+4) Generate an APP_KEY:
 ```bash
 php artisan key:generate
 ```
 
-4)Migrate and seed the database:
+5) Migrate and seed the database:
 ```bash
 php artisan migrate --seed
 ```
 
-5)Run Laravel's Local Development Server:
+6) Run Laravel's Local Development Server:
 ```bash
 php artisan serve
 ```
 
-6) To login as admin and moderate:
+7) To login as admin and moderate:
 email: admin@email.com
 password: admin123**
 
